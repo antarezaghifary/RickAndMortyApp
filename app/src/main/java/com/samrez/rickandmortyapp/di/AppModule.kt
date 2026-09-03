@@ -5,13 +5,10 @@ import org.koin.core.module.Module
 import org.koin.dsl.KoinAppDeclaration
 
 val appModules: List<Module> = listOf(
-//    platformModule,
+    platformModule,
     networkModule,
     databaseModule,
-    characterModule,
-//    locationModule,
-//    episodeModule,
-//    favoritesModule
+    characterModule
 )
 
 fun initKoin(appDeclaration: KoinAppDeclaration = {}) = initializeKoin(appDeclaration)
